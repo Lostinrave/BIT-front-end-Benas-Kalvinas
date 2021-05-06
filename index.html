@@ -1,4 +1,3 @@
-
 <!-- Cia yra html komentaras -->
 
 <!-- 
@@ -26,8 +25,68 @@
  <body>
      <!-- Body daylje rasomas visas vartotojui matomas kodas ir turinys -->
      <!-- HTML Elementas, HTML Tag -->
+     <!-- A - Anchor tagas naudojams nuorodoms - visada reikalingas href atributas 
  
+     ND: Kokius dazniausiai naudojamus atributus gali tureti A elementas
+     
+     -->
+     <ul>
+         <li>
+             <a href="https://google.lt" target="_blank">
+                 Nuoroda i kita svetaine, atsidaro naujame lange
+             </a>
+         </li>
+         <li>
+             <!-- Pasto nuoroda -->
+             <a href="mailto:info@bit.lt" target="_blank"> 
+                 info@bit.lt
+             </a>
+         </li>
  
+         <li>
+             <!-- Telefono nuoroda -->
+             <a href="tel:+370656554">
+                 +370656554
+             </a>
+         </li>
+ 
+         <li>
+             <!-- Nuoroda i puslapio virsu -->
+             <a href="#">
+                 I virsu
+             </a>
+         </li>
+         
+         <li>
+             <!-- Nuoroda i kita to pacio dokumento vieta -->
+             <a href="#antrastes">
+                 Antrastes
+             </a>
+         </li>
+ 
+         <li>
+             <!-- Nuoroda i kita to pacio dokumento vieta -->
+             <a href="#sarasai">
+                 Sarasai
+             </a>
+         </li>
+ 
+         <li>
+             <!-- Nuoroda i kita to pacio dokumento vieta -->
+             <a href="#nuorodos">
+                 Nuorodas
+             </a>
+         </li>
+ 
+         <li>
+             <a href="#html5">
+                 Semantiniai HTML 5 Elementai
+             </a>
+         </li>
+ 
+        
+     </ul>
+    
      <!-- Antrastes elementai -->
  
      <!-- Rekomenduoja tureti 1 H1 antraste viename puslaypje -->
@@ -58,8 +117,12 @@
          nesciunt eum et dolorem quam sed?
      </p>
      
-     
-     <h2>
+     <!-- Viename puslapyje, gali buti tik vienas elementas su tokiu paciu ID
+     #sarasai {
+         color: red;
+     }
+     -->
+     <h2 id="sarasai">
          Sarasai
      </h2>
  
@@ -100,19 +163,55 @@
          </li>
      </ol>
  
-     <h2>
-         Nuorodos
-     </h2>
+     <!-- Rusiuotas sarasas kartu su neruosiuotu sarasu (UL ir OL kombinacija) -->
+     <ul>
+         <li>Choose which type of game you want to play</li>
+         <li>
+             Other item
+         </li>
+         <!-- Sarasas saraso viduje -->
+         <li>
+             <ul>
+                 <li>Ordered list 1</li>
+                 <li>Ordered list 2</li>
+                 <li>Ordered list 3</li>
+                 <li>
+                     <h1>
+                         <a href="#">
+                             Antraste
+                         </a>
+                     </h1>
+                 </li>
+             </ul>
+         </li>
+     </ul>
  
-     <!-- A - Anchor tagas naudojams nuorodoms - visada reikalingas href atributas 
+     <!-- Nuorodos -->
+     <section id="nuorodos">
+         <h2>
+             Nuorodos
+         </h2>
  
-     ND: Kokius dazniausiai naudojamus atributus gali tureti A elementas
+          <!-- Nuoroda i kita to pacio dokumento vieta -->
+         <a href="#antrastes">
+             Antrastes
+         </a>
+ 
+         <!-- Telefono nuoroda -->
+         <a href="tel:+370656554">
+             +370656554
+         </a>
+ 
+         <!-- Pasto nuoroda -->
+         <a href="mailto:info@bit.lt" target="_blank"> 
+             info@bit.lt
+         </a>
+ 
+         <a href="https://google.lt" target="_blank">
+             Nuoroda i kita svetaine, atsidaro naujame lange
+         </a>
+     </section>
      
-     -->
-     <a href="https://google.lt">
-         Nuoroda i kontaktu puslapi
-     </a>
- 
      <!-- NAMU DARBAMS -->
      <h2>
          Lenteles elementai
@@ -137,6 +236,54 @@
      <h2>
          Formos elementai
      </h2>
+ 
+     <!-- HTML5 Semantiniai Elementai -->
+     <section id="html5">
+         <h2>Semantiniai HTML5 Elementai</h2>
+         <p>
+             Semantiniai HTML5 Elementai, nusako paieskos varikliu robotams, logines musu svetaines dalis,
+             todel paieskos sistemos, gali geriau suprasti turini apie yra musu svetaine
+         </p>
+         <ul>
+             <li>
+                 <!-- ND: Uzpildykite sarasa su visais semantinais html 5 elementais
+                 *Extra: Kaip galeciau atspausdinti <section> tekstu, kad matyciau svetaineje, kaip teksta
+                 -->
+                 <section></section>
+             </li>
+         </ul>
+     </section>
+ 
+     <section id="images">
+         <h2>
+             Paveiksliukai
+         </h2>
+         <!-- Teisingas variantas -->
+         <!-- IMG elementas yra self closing tag tipo, jis neturi uzdarymo elemento -->
+         <img src="#" alt="Paskaita 3" />
+ 
+         <!-- Paveiksliukas is isorinio saltinio (external source) -->
+         
+         <img 
+         width="50%"
+         height="auto"
+         alt="kosmosas"
+         src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1933&q=80" />
+           
+         <h3>Paveiksliukas su nuoroda</h3>
+         <h3>Paveiksliukas is lokalaus saltinio (local source)</h3>
+ 
+         <a href="https://bit.lt" target="_blank">
+             <img src="assets/img/logo.png" alt="lokalus paveiksliukas" />
+         </a>
+ 
+         <a href="https://bit.lt" target="_blank">
+             <h4>Paveiksliuko aprasymas</h4>
+         </a>
+         
+         
+         <!-- Neteisingas variantas -->
+     </section>
  
  
  </body>
