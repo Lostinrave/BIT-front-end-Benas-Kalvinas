@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Rezervacija</title>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,85 @@
         body {
           font-family: Arial;
           margin: 0;
-        }
-        
+          background: #010706;
+        } 
         /* Header/Logo Title */
         .header {
-          padding: 60px;
+          padding: 30px;
           text-align: center;
-          background: #010706;
           color: white;
-          font-size: 30px;
+          font-size: 15px;
         }
-        
+        /*Registration form */
+        .forms {
+          text-align: center;
+          color: white;
+
+        } 
+        .footer {
+          text-align: center;
+          color: white;
+
+        } 
         </style>
-        </head>
-        <body>
-        
-        <div class="header">
-        <img src="images/logo.jpg"/>
-          <h1>Rezervacija</h1>
-          <p>Restorano staliuku rezervacija, bei kontaktai</p>
+</head>
+  <body>
+    <div class="header">
+      <img src="images/logo.jpg" alt="logo"/>
+      <h1>Rezervacija</h1>
+      <p>Restorano staliuku rezervacija, bei kontaktai</p>
+    </div>
+    <div class="forms">
+      <div>
+        <label>El.Pastas *</label>
+        <input type="email" required 
+        placeholder="iveskite el. pasta"/>
+      </div>
+      <div>
+        <label>Vardas</label>
+        <input type="text" required
+        placeholder="vardas"/>
+      </div>
+      <div>
+        <label>Pavarde</label>
+        <input type="text" required
+        placeholder="pavarde"/>
+      </div>
+      <div>
+        <label>Telefono numeris</label>
+        <input type="number" required
+        placeholder="iveskite tel. nr."/>
+      </div>
+      <div>
+        <label>Asmenu kiekis</label>
+        <input type="number" required
+        placeholder="kiekis"/>
         </div>
-        
-        
-        </body>
-        </html>
+    </div>
+    <div class="footer">
+      <h1>Kontaktai</h1>
+      <p>Jei kyla klausimu susisiekite su mumis:</p>
+      <div>
+        <ul>
+          <li>
+            <a href="mailto:pub@info.lt" target="_blank"> 
+              pub@info.lt
+            </a>
+          </li>
+          <li>
+            <a href="tel:+37061444244" target="_blank">
+              +37061444244
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/search/republic/@54.9336668,23.8713869,12z/data=!3m1!4b1" target="_blank">
+              Google maps nuoroda
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+</html>
         
